@@ -105,6 +105,10 @@ ul {
   overflow: auto; */
 }
 
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
 .close-button {
   display: block;
   position: absolute;
@@ -262,7 +266,7 @@ ul {
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #fff;
   max-width: 496px;
 }
 
@@ -336,8 +340,8 @@ ul {
 }
 
 .ourteam-list {
-  width: calc((100% - 72px) / 4);
-  width: 100%;
+  /* width: calc((100% - 24px) / 2); */
+  width: 394px;
 }
 
 .antenna {
@@ -493,6 +497,7 @@ ul {
 }
 
 .customers {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #2e2f42;
@@ -582,7 +587,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--foot-par);
   max-width: 264px;
-
+  text-align: justify;
   margin: auto;
 }
 
@@ -785,7 +790,7 @@ ul {
 
 .data-modal {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
@@ -1011,6 +1016,7 @@ ul {
   border-radius: 4px;
   color: #ffffff;
   margin-right: 15px;
+  margin-bottom: 24px;
 }
 
 .modal-input::placeholder {
@@ -1033,8 +1039,7 @@ ul {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-top: 16px;
-  margin-left: 131px;
+  margin: auto;
 }
 
 .button-svg {
@@ -1049,15 +1054,26 @@ ul {
 
   .ourteam-plan-list {
     text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.72px;
   }
 
   .ourteam-list-link {
     display: none;
   }
 
+  .ourteam-list-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
   .infolist {
     width: 264px;
     gap: 72px;
+    margin: inherit;
   }
 
   .ourinfo {
@@ -1077,6 +1093,10 @@ ul {
     width: calc((100% - 16px) / 2);
   }
 
+  .custom-link {
+    width: 190px;
+  }
+
   .customers-list {
     gap: 72px 16px;
     flex-wrap: wrap;
@@ -1094,11 +1114,19 @@ ul {
     width: 320px;
     margin-bottom: 72px;
   }
+
+  .nav-head-log {
+    color: var(--color);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .footer-tab {
+    max-width: 584px;
   }
 
   .nav-list {
@@ -1125,7 +1153,6 @@ ul {
   }
 
   .header-top-list {
-    padding: 24px 0;
     position: relative;
     color: #404bbf;
   }
@@ -1143,7 +1170,7 @@ ul {
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    color: #404bbf;
+    color: #2e2f42;
   }
 
   .header-top-links:hover,
@@ -1165,9 +1192,8 @@ ul {
   }
 
   .address-cont {
-    display: flex;
+    display: block;
     align-items: center;
-    gap: 40px;
   }
 
   .address-cont-mail {
@@ -1196,7 +1222,6 @@ ul {
   .plan {
     padding-top: 96px;
     padding-bottom: 96px;
-    padding: 120px 0;
   }
 
   .plan-list {
@@ -1239,9 +1264,17 @@ ul {
     width: calc((100% - 24 * 2px) / 3);
   }
 
+  .custom-link {
+    width: 168px;
+  }
+
   .customers-list {
     gap: 72px 24px;
     justify-content: center;
+  }
+
+  .cust-cont {
+    max-width: 584px;
   }
 
   .hero-content {
@@ -1254,6 +1287,7 @@ ul {
       ),
       url(../images/Dark-bg.jpg);
   }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -1276,11 +1310,48 @@ ul {
     line-height: 1.07;
     margin-bottom: 36px;
   }
+
+  .mob-button {
+    display: none;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    display: flex;
+    text-align: justify;
+    gap: 72px 24px;
+    margin: auto;
+  }
+
+  .modal-form {
+    display: flex;
+  }
+
+  .button-subscribe {
+    margin: inherit;
+  }
+
+  .modal-input {
+    width: 264px;
+    margin: auto;
+  }
+
+  .footer {
+    padding-left: 108px;
+  }
+
+  .window {
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+
+  .mob-menu {
+    display: none;
   }
 
   .ourinfo {
@@ -1350,4 +1421,18 @@ ul {
     line-height: 1.07;
     margin-bottom: 48px;
   }
+
+  .address-cont {
+    display: flex;
+    gap: 40px;
+  }
+
+  .plan {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* .plan-cont {
+    width: 1128px;
+  } */
 }
