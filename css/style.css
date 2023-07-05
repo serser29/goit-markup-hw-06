@@ -1118,6 +1118,10 @@ ul {
   .nav-head-log {
     color: var(--color);
   }
+
+  .close-class {
+    margin-bottom: 284px;
+  }
 }
 
 @media screen and (min-width: 768px) {
