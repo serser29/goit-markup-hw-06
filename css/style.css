@@ -1327,6 +1327,11 @@ ul {
     margin: auto;
   }
 
+  .footer-logo,
+  .footer-social {
+    margin-bottom: 0;
+  }
+
   .modal-form {
     display: flex;
   }
@@ -1340,8 +1345,8 @@ ul {
     margin: auto;
   }
 
-  .footer {
-    padding-left: 108px;
+  .footer-tab {
+    width: 1125px;
   }
 
   .window {
@@ -1434,6 +1439,16 @@ ul {
   .plan {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .footer-logo,
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-container {
+    max-width: 100%;
+    justify-content: space-evenly;
   }
 
   /* .plan-cont {
