@@ -1312,6 +1312,7 @@ ul {
     display: flex;
     max-width: 530px;
     gap: 74px 24px;
+    padding-left: 0;
   }
 
   .footer-logo {
@@ -1348,10 +1349,12 @@ ul {
 
   .modal-input {
     width: 264px;
+    margin-right: 0;
   }
 
   .window {
     text-align: start;
+    margin-left: 0;
   }
 
   .footer {
