@@ -99,6 +99,14 @@ ul {
   display: none;
 }
 
+.address {
+  display: none;
+}
+
+.address-cont {
+  display: none;
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -1105,6 +1113,14 @@ ul {
     padding-top: 112px;
     padding-bottom: 112px;
   }
+
+  .hero-title {
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: capitalize;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1419,9 +1435,6 @@ ul {
 
   .customers-list {
     gap: 24px;
-  }
-
- 
   }
 
   .hero-title {
