@@ -1110,8 +1110,7 @@ ul {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 100%;
   }
 
   /* .hero {
@@ -1309,19 +1308,28 @@ ul {
     display: none;
   }
 
-  .menu-button:stroke: #2E2F42
-
   .footer-container {
-    flex-wrap: wrap;
     display: flex;
-    text-align: justify;
-    gap: 72px 24px;
-    margin: auto;
+    max-width: 530px;
+    gap: 74px 24px;
   }
 
-  .footer-logo,
+  .footer-logo {
+    margin: 0;
+    text-align: left;
+  }
+
   .footer-social {
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer-soclinks {
     margin-bottom: 0;
+  }
+
+  .footer-logo-link {
+    text-align: left;
   }
 
   .data-modal {
@@ -1331,6 +1339,7 @@ ul {
 
   .modal-form {
     display: flex;
+    gap: 24px;
   }
 
   .button-subscribe {
@@ -1339,11 +1348,15 @@ ul {
 
   .modal-input {
     width: 264px;
-    margin: auto;
   }
 
   .window {
-    margin-left: 0;
+    text-align: start;
+  }
+
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
