@@ -1398,6 +1398,10 @@ ul {
     max-width: 1440px;
   }
 
+  .infolist-cont {
+    padding: 32px 0;
+  }
+
   .mob-menu {
     display: none;
   }
