@@ -116,18 +116,29 @@ ul {
 }
 
 .close-button {
-  display: block;
+  /* display: block; */
   position: absolute;
   top: 24px;
   right: 24px;
-  border-radius: 24px;
+  /* border-radius: 24px;
   border: 1px solid var(--navyblue, #2e2f42);
   background: #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08); */
   margin-bottom: 32px;
+  border-radius: 24px;
+  border: 1px solid #e7e9fc;
+  width: 24px;
+  height: 24px;
+  fill: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  background-color: transparent;
 }
+
 .close-button-mob {
 }
 .list {
@@ -1188,6 +1199,7 @@ ul {
 
   .ourteam-list {
     max-width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 
   .ourteam-plan-list {
@@ -1236,7 +1248,7 @@ ul {
   }
 
   .hero-content {
-    width: 768px;
+    max-width: 768px;
     height: 436px;
     flex-shrink: 0;
   }
@@ -1356,7 +1368,7 @@ ul {
   }
 
   .hero-content {
-    width: 1440px;
+    max-width: 1440px;
     height: 600px;
     flex-shrink: 0;
     background-image: linear-gradient(
