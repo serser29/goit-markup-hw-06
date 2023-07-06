@@ -1201,6 +1201,7 @@ ul {
   .address {
     font-style: normal;
     margin-left: auto;
+    display: block;
   }
 
   .address-cont {
@@ -1443,6 +1444,10 @@ ul {
     letter-spacing: 0.02em;
     max-width: 496px;
     margin-bottom: 48px;
+  }
+
+  .address {
+    display: block;
   }
 
   .address-cont {
