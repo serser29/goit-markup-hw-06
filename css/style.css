@@ -1366,7 +1366,19 @@ ul {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding-right: 0;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    height: 600px;
+    max-width: 1440px;
   }
 
   .mob-menu {
@@ -1383,8 +1395,7 @@ ul {
   }
 
   .ourteam-list {
-    width: calc((100% - 24px) / 4);
-    width: 264px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
   }
 
   .our-infoteam {
@@ -1410,38 +1421,14 @@ ul {
     gap: 24px;
   }
 
-  .hero-content {
-    max-width: 1440px;
-    height: 600px;
-    flex-shrink: 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-    margin: 0 auto;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero-content {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-desktop-2x.jpg);
-    }
+ 
   }
 
   .hero-title {
-    display: flex;
-    max-width: 496px;
-    height: 120px;
-    flex-direction: column;
-    flex-shrink: 0;
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
     margin-bottom: 48px;
   }
 
@@ -1467,10 +1454,5 @@ ul {
   .footer-container {
     max-width: 100%;
     justify-content: space-evenly;
-  }
-
-  .plan-cont {
-    display: flex;
-    padding-right: 0;
   }
 }
